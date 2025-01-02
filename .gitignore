@@ -1,0 +1,5 @@
+grid*
+*.jpg
+photos
+node_modules
+annotated*
