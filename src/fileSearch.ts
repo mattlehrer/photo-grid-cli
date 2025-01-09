@@ -36,7 +36,7 @@ export async function searchForImages(directory: string, extensions: string[]): 
 	const duplicates: string[] = [];
 
 	for (const filePath of matchedFiles) {
-		const base = path.basename(filePath);
+		const base = path.basename(filePath).toLowerCase();
 
 		if (!seenBasenames.has(base)) {
 			// first time we see this basename
