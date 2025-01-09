@@ -86,7 +86,7 @@ export async function runCli(): Promise<void> {
 			type: 'input',
 			name: 'imagesPerRow',
 			message: 'How many images should be in each row?',
-			default: '25',
+			default: '60',
 			validate: (input: string) => {
 				const val = parseInt(input, 10);
 				if (isNaN(val) || val <= 0) {
